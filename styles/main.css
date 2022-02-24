@@ -65,22 +65,56 @@
   text-align: center;
 }
 
+.list-premium {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+
 .reasons-premium {
+  box-sizing: border-box;
+  flex-direction: column-reverse;
   list-style: none;
+  padding: 25px;
 }
 
 .images-premium {
+  box-sizing: border-box;
+  flex-direction: column;
+  justify-items: flex-start;
   width: 200px;
+  padding: 15px 30px;
 }
 
 .my-container-footer {
+  display: flex;
   background-color: var(--header-footer-background);
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer-menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 .links-footer {
   color: var(--secondary-text);
   text-decoration: none;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px;
+}
+
+.container-right {
+  color: var(--secondary-text);
 }
 
 .copyright {
   color: var(--secondary-text);
+}
+
+.shield {
+  justify-content: right;
+  padding: 5px;
 }
