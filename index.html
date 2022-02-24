@@ -4,73 +4,72 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css" />
     <link rel="stylesheet" href="./styles/main.css" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto"
+/>
     <title>Spotify</title>
   </head>
   <body>
     <header class="my-container-header">
-      <img class="logo" src="./images/logo.png" alt="spotify logo"/>
-      <img class="icon" src="./images/menu-icon.png" alt="menu icon"/>
-
-      <!-- yo he elegido esos nombres para los selectores, elige tú otros si no te gustan -->
       
-      <nav>
-        <ul>
-          <li><a href="https://www.spotify.com/es/premium/">Premium</a></li>
-          <li><a href="https://support.spotify.com/es/?_ga=2.33216830.1055678828.1645541858-16792181.1645541858">Asistencia</a></li>
-          <li><a href="https://www.spotify.com/es/download/windows/?_ga=2.224458266.1055678828.1645541858-16792181.1645541858">Descargar</a></li>
-          <li><a href="https://www.spotify.com/es/signup">Registrarse</a></li>
-          <li><a href="https://accounts.spotify.com/es-ES/login/?continue=https%3A//open.spotify.com/__noul__%3Fl2l%3D1%26nd%3D1&_locale=es-ES">Iniciar sesión</a></li>
+      <div id="logo-container"><img class="logo" src="./images/logo.png" alt="spotify logo"/></div>
+      
+      <nav id="main-menu">
+        <ul class="main-menu">
+          <li><a  class="links-menu" href="https://www.spotify.com/es/premium/">Premium</a></li>
+          <li><a class="links-menu" href="https://support.spotify.com/es/?_ga=2.33216830.1055678828.1645541858-16792181.1645541858">Asistencia</a></li>
+          <li><a class="links-menu" href="https://www.spotify.com/es/download/windows/?_ga=2.224458266.1055678828.1645541858-16792181.1645541858">Descargar</a></li>
+          <li>|</li>
+          <li><a class="links-menu" href="https://www.spotify.com/es/signup">Registrarse</a></li>
+          <li><a class="links-menu" href="https://accounts.spotify.com/es-ES/login/?continue=https%3A//open.spotify.com/__noul__%3Fl2l%3D1%26nd%3D1&_locale=es-ES">Iniciar sesión</a></li>
         </ul>
+        <img class="main-menu-icon" src="./images/menu-icon.png" alt="menu icon"/>
       </nav>
     </header>
     <main>
       <section class="my-container-1">
         <article>
-      <h1>Prueba premium gratis 3 meses.</h1>
+      <h1>Prueba premium gratis 3 meses</h1>
       <h2>
         Escucha millones de canciones sin anuncios, a la carta y sin conexión.
       </h2>
     </article>
-      <button>Ver planes</button>
-      <p>
-        Rigen términos y condiciones. Los tres meses gratis no están disponibles
-        para usuarios que ya hayan probado premium.
+      <button class="plans-button">VER PLANES</button>
+      <p><small>Rigen términos y condiciones. Los tres meses gratis no están disponibles
+        para usuarios que ya hayan probado premium.</small>
+        
 
       </section>
       </p>
 
       <section class="my-container-2">
-        
-      <article>
 
-        <h2>Por qué pasarte a premium.</h2>
+        <h2>Por qué pasarte a premium</h2>
 
         <!-- en vez de listado lo he englobado todo en un artículo porque tiene texto e imágenes. Con el listado me salía un punto al lado de cada imagen-->
+         <!-- andre: he vuelto a meterlo en lista. en estilos he añadido list-style:none; y desaparece el puntito :) -->
 
-    
-        <img src="images/benefit-1.png"> <p><strong>Descarga música</strong></p>
-        <p>Llévala siempre contigo.</p>
-        <img src="./images/benefit-2.png"><p><strong>Sin anuncios</strong></p> <p>Disfruta de música sin interrupciones</p>
-        <img src="./images/benefit-3.png"><p><strong>Escucha lo que quieras</strong></p>
-        <P>Incluso en el móvil</P>
-        <img src="./images/benefit-4.png"><p><strong>Todas las canciones que quieras</strong></p><p>Simplemente dale a siguiente</p>
-        
-      </article> 
+          <ul class="list-premium"> 
+              <li class="reasons-premium"><img class="images-premium" src="images/benefit-1.png"><p><strong>Descarga música</strong></p><p>Llévala siempre contigo.</p></li>
+              <li class="reasons-premium"><img class="images-premium" src="./images/benefit-2.png"><p><strong>Sin anuncios</strong></p> <p>Disfruta de música sin interrupciones</p></li>
+             <li class="reasons-premium"> <img class="images-premium" src="./images/benefit-3.png"><p><strong>Escucha lo que quieras</strong></p><P>Incluso en el móvil</P></li>
+              <li class="reasons-premium"><img class="images-premium" src="./images/benefit-4.png"><p><strong>Todas las canciones que quieras</strong></p><p>Simplemente dale a siguiente</p></li> 
+          </ul>
 
     </section>
     
     </main>
-    <footer>
-      <nav>
-        <ul>
-          <li><a href=""></a>Legal</li>
-          <li><a href="">Cookies</a></li>
-          <li>Información sobre los anuncios</li>
+    <footer class="my-container-footer">
+      <nav id="footer-menu">
+        <ul class="footer-menu">
+          <li><a class="links-footer" href="#"><small>Legal</small></a></li>
+          <li><a class="links-footer" href="#"><small>Cookies</small></a></li>
+          <li><a class="links-footer" href="#"><small>Información sobre los anuncios</small></a></li>
         </ul>
       </nav>
-
-      copyright
+      <div class="copyright">Copyright</div>
+    
 
     </footer>
   </body>
