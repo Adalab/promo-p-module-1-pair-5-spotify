@@ -13,6 +13,9 @@
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
+	position: fixed;
+	top: 0;
+	width: 100%;
 }
 
 .logo {
@@ -40,10 +43,10 @@
 }
 
 .my-container-1 {
+	margin-top: 74px;
 	background-color: rgba(38, 145, 177, 0.637);
-	height: 40vh;
-	max-height: 600px;
 	padding: 20px;
+	text-align: center;
 	color: var(--secondary-text);
 	background-image: url(../images/premium_dancer.png);
 	background-position: top right;
