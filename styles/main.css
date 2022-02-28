@@ -113,10 +113,14 @@
 }
 
 .copyright {
+  display: flex;
+  justify-content: flex-start;
+  padding: 5px 15px;
   color: var(--secondary-text);
 }
 
 .shield {
-  justify-content: right;
+  display: flex;
+  justify-content: space-around;
   padding: 5px;
 }
