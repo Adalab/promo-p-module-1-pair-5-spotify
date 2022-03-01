@@ -45,7 +45,6 @@
 .my-container-1 {
   background-color: rgba(38, 145, 177, 0.637);
   padding: 20px;
-  text-align: center;
   color: var(--secondary-text);
   background-image: url(../images/premium_dancer.png);
   background-position: top right;
@@ -62,30 +61,21 @@
 }
 
 .my-container-2 {
+  width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
-}
-
-.list-premium {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
+  align-items: flex-start;
+  text-align: left;
 }
 
 .reasons-premium {
-  width: 100%;
-  margin: auto;
   display: flex;
-  box-sizing: border-box;
+  justify-content: flex-start;
   align-items: center;
-  list-style: none;
 }
 
 .images-premium {
-  box-sizing: border-box;
   width: 200px;
   margin: 20px;
 }
